@@ -8,7 +8,6 @@ import resolvers from './resolvers';
 const server = new ApolloServer({
   typeDefs: typeDefs,
     resolvers: resolvers,
-  context: (ctx: Context) => ctx,
   playground: true,
   introspection: true,
 });
